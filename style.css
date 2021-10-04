@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', 'Segoe UI', Tahoma, Geneva;
+    background-color: #000000;
+}
+
+.header {
+    color: #32B9CD;
+    border-bottom: 3px solid #32B9CD;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    /* depois de setar o display: flex, usamos o justify-content para justificar na horizontal e o space-between para dar espaços entre eles (between) */
+    justify-content: space-between;
+}
+
+.navbar {
+    /* setar estilo da lista para "sem estilo". */
+    list-style: none;
+    display: flex;
+    width: 600px;
+    /* depois de setar o display: flex, usar o space-evenly para espaços uniformemente (evenly)*/
+    justify-content: space-evenly;
+    /* alinhar componentes verticalmente (quando o display for flex sem alteração de "sentido" */
+    align-items: center;
+    color: #E3b062;
+}
+
+.navbar a {
+    color: #E3b062;
+    /* usamos o text-decoration para tirar o sublinhado das letras que forem da tag a (uma linkagem) */
+    text-decoration: none;
+}
+
+.agora {
+    font-weight: 800;
+}
+
+/* Banner */
+
+.banner{
+    height: 500px;
+    color: #FFF;
+    /* setar fundo da div com a imagem ou url especificada */
+    background-image: url("imgs/bg-jelly-fish-para-home.png");
+    /* imagem ocupar todo o espaços disponivel se ajustando */
+    background-size: cover;
+}
+
+.banner .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner p{
+    width: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    margin-left: 350px;
+}
+
+.banner span{
+    font-weight: 800;
+}
+
+/* social */
+.social{
+    background-color: #E5E5E5;
+    padding: 50px 0;
+}
+
+.social .container{
+    display: flex;
+    /* flex-direction usado para alterar orientação do display: flex, ao invés de row vira column */
+    flex-direction: column;
+    /* com flex-direction: column, o justify-content fica em orientação vertical */
+    justify-content: space-evenly;
+}
+
+.social .titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.social h2{
+    display: flex;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 20px;
+    /* usamos o align-self para orientar o próprio componente, ou seja, o componente que o compõem */
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    color: #E6005A;
+    margin: 0;
+}
